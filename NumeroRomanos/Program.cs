@@ -10,17 +10,20 @@ namespace ConversorRomano.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Conversor Números Romanos");
+            Console.WriteLine("╔════════════════════════════╗");
+            Console.WriteLine("║Conversor de Números Romanos║");
+            Console.WriteLine("╚════════════════════════════╝");
 
             ConversorNumeroIndoArabico conversorIndoArabico = new ConversorNumeroIndoArabico();
 
-            Console.WriteLine(conversorIndoArabico.ConversorNumeroIndoArabicoPrimario(3 + 3));
-            Console.ResetColor();
+            Console.WriteLine(conversorIndoArabico.ConversorNumeroArabicoPrimario(6));
+
+            Console.WriteLine();
 
             ConverterNumeroRomano conversorRomano = new ConverterNumeroRomano();
 
             Console.WriteLine(conversorRomano.ConverterNumeroRomanoSecundario());
-            Console.ResetColor();
+            
 
             Console.ReadLine();
         }
